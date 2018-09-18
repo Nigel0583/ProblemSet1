@@ -6,7 +6,7 @@ public class ForLoopJTextArea {
         int in;
 
         JTextArea textArea = new JTextArea();
-        textArea.setText("Yard\tInches\n------\t------");
+        textArea.setText(String.format( "%-20s %10s  \n %-20s %10s ","Yard", "Inches", "-------", "-------"));
 
         for ( int i = 1; i <= 10; i++) {
 

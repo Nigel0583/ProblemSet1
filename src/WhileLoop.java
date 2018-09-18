@@ -3,16 +3,16 @@ import javax.swing.*;
 public class WhileLoop {
     public static void main(String[] args) {
 
-        String exchangeRateS, poundS;
+        String ExchangeRates, Pounds;
         double exchangeRate, pound=1, euro;
 
-        exchangeRateS= JOptionPane.showInputDialog("Please enter exchange rate (£ to €)");
-        exchangeRate=Double.parseDouble(exchangeRateS);
+        ExchangeRates= JOptionPane.showInputDialog("Please enter exchange rate (£ to €)");
+        exchangeRate=Double.parseDouble(ExchangeRates);
 
         while(pound!=0)
         {
-            poundS=JOptionPane.showInputDialog("Please enter the pounds to be converted");
-            pound=Integer.parseInt(poundS);
+            Pounds=JOptionPane.showInputDialog("Please enter the pounds to be converted");
+            pound=Integer.parseInt(Pounds);
 
             if(pound>0)
             {
