@@ -14,13 +14,15 @@ public class Carpeting {
         double area = length * breath;
         double total = cost * area;
 
-
-
         JTextArea textArea = new JTextArea();
-        textArea.setText ("Quotation for Length of room:\n Breadth of room:\n Total area of the room: "  +
-                "Cost per square metre of carpet: \nTotal cost of carpet: " );
 
-        textArea.append(String.format("%-20s %20s \n%-20s%.2f m.\n %-20s%.2f m.\n", name,length,breath,area,cost,total));
+        textArea.setText(String.format("%-20s %5s \n %20s%.2f  \n %20s%.2f \n  %20s%.2f  \n %20s%.2f  \n %20s%.2f",
+                                                                                "Quotation for "  ,name,
+                                                                                "Length of room:" ,length,
+                                                                                "Breadth of room: ",breath,
+                                                                                "Total area of the room: " ,area,
+                                                                                "Cost per square metre of carpet:" ,cost,
+                                                                                "Total cost of carpet: " ,total));
 
         JOptionPane.showMessageDialog(null, textArea);
 
